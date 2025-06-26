@@ -4,8 +4,8 @@
 #include<iostream>
 #include <iomanip>
 
-template <typename T>
-void iter(char * a, unsigned int length, T fonction)
+template <typename T, typename F>
+void iter(T *a, unsigned int length, F fonction)
 {
     for (unsigned int i = 0; i < length; i++)
     {
@@ -16,6 +16,11 @@ void iter(char * a, unsigned int length, T fonction)
 void print(char s)
 {
    std::cout << s;
+}
+
+void makeUpper(char& c)
+{
+    c = std::toupper(c);
 }
 
 #endif
