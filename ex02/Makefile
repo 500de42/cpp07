@@ -1,4 +1,4 @@
-NAME = Inter
+NAME = Array
 SRC = main.cpp
 FLAGS = c++ -Wall -Werror -Wextra -std=c++98
 
